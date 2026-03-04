@@ -1,119 +1,33 @@
 <!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#ffffff" />
-    <meta name="description" content="Form & Signal — performance clarity for endurance rowing." />
-    <title>Form &amp; Signal</title>
-    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-    <style>
-      :root {
-        --bg: #ffffff;
-        --fg: #111111;
-        --muted: rgba(17, 17, 17, 0.65);
-        --border: rgba(17, 17, 17, 0.18);
-        --shadow: 0 10px 30px rgba(0,0,0,0.08);
-        --radius: 18px;
-      }
-      * { box-sizing: border-box; }
-      html, body { height: 100%; }
-      body {
-        margin: 0;
-        background: var(--bg);
-        color: var(--fg);
-        font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
-        display: grid;
-        place-items: center;
-      }
-      .wrap {
-        width: min(720px, calc(100vw - 32px));
-        padding: 34px 28px;
-        border: 1px solid var(--border);
-        border-radius: var(--radius);
-        box-shadow: var(--shadow);
-        text-align: center;
-      }
-      .mark {
-        width: 128px;
-        height: 128px;
-        margin: 0 auto 18px;
-        display: block;
-      }
-      h1 {
-        margin: 0;
-        font-size: clamp(22px, 3.6vw, 30px);
-        letter-spacing: 0.18em;
-        font-weight: 650;
-      }
-      .sub {
-        margin: 12px auto 0;
-        max-width: 52ch;
-        color: var(--muted);
-        line-height: 1.5;
-        font-size: 15px;
-      }
-      .actions {
-        margin-top: 22px;
-        display: flex;
-        justify-content: center;
-        gap: 12px;
-        flex-wrap: wrap;
-      }
-      a.button {
-        text-decoration: none;
-        color: inherit;
-        border: 1px solid var(--border);
-        padding: 10px 14px;
-        border-radius: 12px;
-        display: inline-flex;
-        align-items: center;
-        gap: 10px;
-        transition: transform 120ms ease, border-color 120ms ease, background 120ms ease;
-        background: rgba(17,17,17,0.02);
-      }
-      a.button:hover {
-        transform: translateY(-1px);
-        border-color: rgba(17,17,17,0.32);
-        background: rgba(17,17,17,0.04);
-      }
-      .tiny {
-        margin-top: 18px;
-        color: rgba(17, 17, 17, 0.45);
-        font-size: 12px;
-      }
-      code.inline {
-        font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-        font-size: 0.95em;
-        padding: 0.14em 0.38em;
-        border: 1px solid var(--border);
-        border-radius: 9px;
-        background: rgba(17,17,17,0.03);
-      }
-    </style>
-  </head>
-  <body>
-    <main class="wrap" role="main">
-      <img class="mark" src="/public/fs.svg" alt="Form & Signal mark" />
-      <h1>FORM &amp; SIGNAL</h1>
-      <p class="sub">
-        Performance clarity for endurance rowing. Minimal tools, maximal signal.
-      </p>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Form & Signal</title>
 
-      <div class="actions">
-        <!-- Update this URL to your real app domain once set (recommended: erg.form-signal.com) -->
-        <a class="button" href="https://erg.form-signal.com" rel="noopener">
-          Open Erg Analyzer
-        </a>
-        <!-- Optional: point to your GitHub repo -->
-        <a class="button" href="https://github.com/" rel="noopener">
-          GitHub
-        </a>
-      </div>
+<style>
+html, body {
+  margin: 0;
+  height: 100%;
+  background: black;
+}
 
-      <div class="tiny">
-        Tip: keep the app on <code class="inline">erg.form-signal.com</code> so it always serves the latest Vercel production build.
-      </div>
-    </main>
-  </body>
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+img {
+  width: 160px;
+}
+</style>
+
+</head>
+
+<body>
+
+<img src="/fs.svg" />
+
+</body>
 </html>
