@@ -1,20 +1,19 @@
-<svg width="200" height="200" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
 
-  <!-- vertical bar -->
+  <!-- background so white logo is visible in tabs -->
+  <rect width="100" height="100" fill="black"/>
+
+  <!-- vertical bar (same geometry as main logo) -->
   <line x1="40" y1="15" x2="40" y2="85"
-        stroke="black"
-        stroke-width="6"
+        stroke="white"
+        stroke-width="8"
         stroke-linecap="round"/>
 
-  <!-- signal wave -->
-  <path d="
-    M40 50
-    C50 20, 60 80, 70 50
-    S90 20, 90 50
-  "
-  fill="none"
-  stroke="black"
-  stroke-width="6"
-  stroke-linecap="round"/>
+  <!-- signal curve (same path as main logo) -->
+  <path d="M40 50 C50 20, 60 80, 70 50 S90 20, 90 50"
+        fill="none"
+        stroke="white"
+        stroke-width="8"
+        stroke-linecap="round"/>
 
 </svg>
